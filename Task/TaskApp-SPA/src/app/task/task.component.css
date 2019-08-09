@@ -1,0 +1,15 @@
+.myHeader {
+    margin-top: 2rem!important;
+}
+.fa-home:before {
+    font-size: 17rem;
+}
+
+.myAlert{
+    width: 38rem;
+    margin: auto;
+}
+.myRow{
+  margin-top: 2rem !important;
+  margin-left: 1rem !important;
+}

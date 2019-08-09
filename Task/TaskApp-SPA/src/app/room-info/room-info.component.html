@@ -1,0 +1,23 @@
+<div class="card mb-4 rounded-sm">
+  <div class="card-header">
+    <h4 class="my-0 font-weight-normal">{{roomData.name}}</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-6 ">
+      <h5 class="mt-3">Temperatur</h5>
+      <i *ngIf=" roomData.temperature ==0 ||roomData.temperature <0"class="fa fa-thermometer-empty myIcone " style="color:red"></i>
+      <i *ngIf="roomData.temperature<=20 && roomData.temperature>0"class="fa fa-thermometer-quarter myIcone " style="color:red"></i>
+       <i *ngIf="roomData.temperature<=30 && roomData.temperature>20"class="fa fa-thermometer-half myIcone " style="color:red"></i>
+       <i *ngIf="roomData.temperature>30" class="fa fa-thermometer-three-quarters myIcone" style="color:red"></i>
+      <h4 class="mt-3">{{roomData.temperature}}°</h4>
+    </div>
+    <div class="col-sm-6">
+      <h5 class="mt-3">Luftfuktighet</h5>
+     <i class="fa fa-tint myIcone" style=" color: rgb(2, 240, 252)"></i>
+     <h4 class="mt-3">{{roomData.humidity}}</h4>
+</div>
+  </div>
+  <div class="card-footer">
+    <h5>{{now |date:'MMMM d, y, h:mm:ss a'}}</h5>
+  </div>
+</div>
